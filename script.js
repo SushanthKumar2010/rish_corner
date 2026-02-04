@@ -35,14 +35,14 @@
 
   function getWhatsAppNumber() {
     var a = document.querySelector('.contact-actions a[href^="https://wa.me/"]');
-    if (!a) return '919876543210';
+    if (!a) return '9198494 41529';
     var m = a.getAttribute('href').match(/wa\.me\/(\d+)/);
-    return m ? m[1] : '919876543210';
+    return m ? m[1] : '9198494 41529';
   }
 
   function getEmail() {
     var a = document.querySelector('.contact-actions a[href^="mailto:"]');
-    if (!a) return 'hello@rishcorner.com';
+    if (!a) return 'ritishabajaj0@gmail.com';
     return (a.getAttribute('href') || '').replace(/^mailto:/i, '').split('?')[0].trim() || 'hello@rishcorner.com';
   }
 
@@ -109,3 +109,4 @@
     });
   }
 })();
+
